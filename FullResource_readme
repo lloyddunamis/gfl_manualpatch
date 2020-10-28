@@ -1,7 +1,8 @@
-Girls' Frontline [EN]
-Minimal/Full Resource Manual Patch
+# Girls' Frontline [EN]
+# Minimal/Full Resource Community-provided Manual Patch
 
-===================== Table of Contents
+
+Table of Contents
 
 A. Pre-requisites
 B. Instructions
@@ -19,29 +20,32 @@ Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 
 Manual Download of Patch Files:
 
-Default
+Default (for fresh installs, or clear cache without Voodoo recipe flag)
 Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
          or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
-Uncensored
+Uncensored (for clear cache with Voodoo recipe flag)
 Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
          or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
 Notes:
-a. AndroidAllData - minimal files to be able to login to the game. Will not be able to access Intelligence Center, Forward Basecamp, etc.
-b. AndroidAddData - additional file download; can be downloaded
-c. "He" suffix - contains non-censored files
+* AndroidAllData - minimal files to be able to login to the game. Will not be able to access Intelligence Center, Forward Basecamp, etc.
+* AndroidAddData - additional file download; can be downloaded
+* "He" suffix - contains non-censored files (though it has only around 45 different files from the default)
+* 
 
 
+Manual Patches  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
 
+Minimal: 
+Additional: 
 
 
 ===================== B. Instructions
-
 
 1) Open archive in WinRAR.
 2) Extract & Replace files to the following common path: (may vary slightly before \data\)
@@ -70,6 +74,10 @@ ANDROID
 4) Confirm prompt by tapping "OK".
 5) When finished, a new file will be created with the prefix "fixed."; this will be the repaired version of the archive file.
    Results log will also show how much damage was repaired, if any.
+
+
+Notes:
+* Sometimes this works for the .dat files that are ZIP files anyway; This "rebuilds" the archive instead, somehow similar to repair.
 
 
 ===================== D. FAQ/Others
