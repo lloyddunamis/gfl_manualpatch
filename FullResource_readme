@@ -1,5 +1,5 @@
-# Girls' Frontline [EN]
-# Minimal/Full Resource Community-provided Manual Patch
+Girls' Frontline [EN]
+Minimal/Full Resource Community-provided Manual Patch
 
 
 Table of Contents
@@ -29,20 +29,20 @@ Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C09
 Uncensored (for clear cache with Voodoo recipe flag)
 Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-         or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+FullResource: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+
+Manual Patches  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+
+Minimal: Download AndroidAllData
+FullResource: 
+
 
 Notes:
 * AndroidAllData - minimal files to be able to login to the game. Will not be able to access Intelligence Center, Forward Basecamp, etc.
 * AndroidAddData - additional file download; can be downloaded
-* "He" suffix - contains non-censored files (though it has only around 45 different files from the default)
-* 
+* "He" suffix - contains non-censored files (though it has only around 45 different files from the default
 
-
-Manual Patches  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
-
-Minimal: 
-Additional: 
 
 
 ===================== B. Instructions
