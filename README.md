@@ -17,6 +17,8 @@ Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
 
 Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 
+Manual Patch  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+
 
 ===================== B. Instructions
 
@@ -55,6 +57,8 @@ ANDROID
 1A) Delete the temporary downloaded files (*.dat & *.temp) left in the following game file location:
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
+
+{to add more later}
 
 
 ===================== E. Contact
