@@ -70,7 +70,7 @@ Discord Amanie#7511
 Twitter @lloyd_dunamis
 
 
-===================== G. Disclaimer
+===================== F. Disclaimer
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
