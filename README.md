@@ -58,6 +58,34 @@ ANDROID
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
+2Q) Am I in the right "New" folder?
+2A) The directory tree of the target working folder should look something like the following:
+
+Internal storage (/storage/emulated/0)
+- Android
+  - data
+    + com.app
+    + com.some.app
+    + com.some.other.app
+    - com.sunborn.girlsfrontline.en
+      + cache
+      - files
+        + activity
+        + AIHlepSDK
+        - Android
+          + New        <-- This is the folder we should be working in
+        + cartoon
+        + il2cpp
+        + stc
+        + Unity
+        + UnityCache
+    + com.yet.another.app
+  + obb
+
+3Q) I play GFL in an iOS device. Is there a workaround for when I encounter the "Insufficient Memory" error or when the app size bloat up more than 4GB?
+3A) Unfortunatley there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game after several attempts of patching.
+
+
 {to add more later}
 
 
