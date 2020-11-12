@@ -18,7 +18,15 @@ For deployment of personal manual patch
 Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
 Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 
-Manual Download of Patch Files:
+
+Manual Download of Patch Files
+
+Notes:
+If you'd like to just login to the game ASAP, download only "AndroidAllData".
+Features like Intelligence Center, Forward Basecamp, etc., will not be able until you download the additional resources.
+You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData".
+
+AndroidResConfigData.txt: https://mega.nz/file/SYVXiYZA#MpsbHrEFi1i7cs05TAQFKGMcto1iR8nL-HqAK3jdAjQ
 
 Default (for fresh installs, or clear cache without Voodoo recipe flag)
 Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
@@ -29,28 +37,27 @@ Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C09
 Uncensored (for clear cache with Voodoo recipe flag)
 Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-FullResource: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
            or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
+
+Optional:
 Manual Patches  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
-
-Minimal: Download AndroidAllData
-FullResource: 
-
-
-Notes:
-* AndroidAllData - minimal files to be able to login to the game. Will not be able to access Intelligence Center, Forward Basecamp, etc.
-* AndroidAddData - additional file download; can be downloaded
-* "He" suffix - contains non-censored files (though it has only around 45 different files from the default
-
+- 
 
 
 ===================== B. Instructions
 
-1) Open archive in WinRAR.
-2) Extract & Replace files to the following common path: (may vary slightly before \data\)
+Our Working folder: Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
-Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
+1) Extract the Minimal (AndroidAllData) .dat file to working folder.
+   Copy `AndroidResConfigData.txt` to it as well.
+2) Run GFL, with FullResource download **un**checked.
+   It should see the extracted files and reduce the required download size from 986MB down to around 315MB.
+3) **Copy** Additional (AndroidAddData) .dat to working folder.
+4) Run GFL, this time with FullResource download checked, and let it unpack the copied .dat. Close client after.
+5) Run GFL for the last time, for remaining update files. (currently around 155MB)
+
 
 
 ===================== C. Repair Archive
@@ -87,6 +94,33 @@ Notes:
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
+2Q) Am I in the right "New" folder?
+2A) The directory tree of the target working folder should look something like the following:
+
+Internal storage (/storage/emulated/0)
+- Android
+  - data
+    + com.app
+    + com.some.app
+    + com.some.other.app
+    - com.sunborn.girlsfrontline.en
+      + cache
+      - files
+        + activity
+        + AIHlepSDK
+        - Android
+          + New        <-- This is the folder we should be working in
+        + cartoon
+        + il2cpp
+        + stc
+        + Unity
+        + UnityCache
+    + com.yet.another.app
+  + obb
+
+3Q) I play GFL in an iOS device. Is there a workaround for when I encounter the "Insufficient Memory" error or when the app size bloat up more than 4GB?
+3A) Unfortunatley there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game after several attempts of patching.
+
 
 ===================== E. Contact
 
@@ -97,7 +131,7 @@ Discord Amanie#7511
 Twitter @lloyd_dunamis
 
 
-===================== G. Disclaimer
+===================== F. Disclaimer
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
