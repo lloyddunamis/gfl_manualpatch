@@ -40,8 +40,8 @@ Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFF
 FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
            or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
-(Optional but can quicken client patching further)
-Manual Update Patches: (files that are downloaded after Minimal or FullResource is installed)
+(Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory")
+Manual Update Patches: (update files that are downloaded after Minimal or FullResource is installed)
  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
  - MinimalUpdate[yyyy-mmdd]
  - FullResourceUpdate[yyyy-mmdd]
@@ -53,7 +53,7 @@ Manual Update Patches: (files that are downloaded after Minimal or FullResource 
 Our Working folder: Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
 1) Extract the Minimal AndroidAllData[...].dat file to working folder.
-   Copy `AndroidResConfigData.txt` to it as well.
+   Copy `AndroidResConfigData.txt` to it as well.  (Important! else the client will not check for the extracted files at all)
 2) Run GFL, with FullResource download **un**checked.
    It should see the extracted files and reduce the required download size from 986MB down to around 315MB.
 3) **Copy** Additional AndroidAddData[...].dat to working folder.
@@ -145,6 +145,8 @@ Twitter @lloyd_dunamis
 
 
 ===================== F. Disclaimer
+
+The latest version of this document will be in [https://github.com/lloyddunamis/gfl_manualpatch/edit/main/FullResource_readme].
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
