@@ -21,43 +21,56 @@ Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 
 Manual Download of Patch Files
 
+Required for all instances, the latest AndroidResConfigData.txt; retrieve from: https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw
+
 Notes:
 If you'd like to just login to the game ASAP, download only "AndroidAllData".
-Features like Intelligence Center, Forward Basecamp, etc., will not be able until you download the additional resources.
-You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData".
+Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources.
+You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
 
-AndroidResConfigData.txt: https://mega.nz/file/SYVXiYZA#MpsbHrEFi1i7cs05TAQFKGMcto1iR8nL-HqAK3jdAjQ
-
-Default (for fresh installs, or clear cache without Voodoo recipe flag)
-Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+Default  (for fresh installs, or clear cache without Voodoo recipe flag)
+Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-         or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
-Uncensored (for clear cache with Voodoo recipe flag)
-Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+Uncensored  (for clear cache with Voodoo recipe flag)
+Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-Additional: http://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
            or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
-
-Optional:
-Manual Patches  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
-- 
+(Optional but can quicken client patching further)
+Manual Update Patches: (files that are downloaded after Minimal or FullResource is installed)
+ [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+ - MinimalUpdate[yyyy-mmdd]
+ - FullResourceUpdate[yyyy-mmdd]
+ - ManualPatch[yyyy-mmdd]  (Incremental patch; deploy incrementally when MinimalUpdate and FullResourceUpdate are older than ManualPatch's date)
 
 
 ===================== B. Instructions
 
 Our Working folder: Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
-1) Extract the Minimal (AndroidAllData) .dat file to working folder.
+1) Extract the Minimal AndroidAllData[...].dat file to working folder.
    Copy `AndroidResConfigData.txt` to it as well.
 2) Run GFL, with FullResource download **un**checked.
    It should see the extracted files and reduce the required download size from 986MB down to around 315MB.
-3) **Copy** Additional (AndroidAddData) .dat to working folder.
-4) Run GFL, this time with FullResource download checked, and let it unpack the copied .dat. Close client after.
-5) Run GFL for the last time, for remaining update files. (currently around 155MB)
+3) **Copy** Additional AndroidAddData[...].dat to working folder.
+4) Run GFL, this time with FullResource download checked. The client will unpack the copied .dat file by itself. Close the client after it finishes, or continue playing.
+   Note: You must have the correct AndroidAddData ("He_" or non "He_"), otherwise the client will not see the wrong 1.4GB dat file.
+5) Run GFL for the last time, for the remaining update files. (currently around 155MB)
 
+
+If you have the optional Manual Update Patches downloaded:
+1b) Extract "Minimal Update[yyyy-mmdd].rar" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
+4b) Extract "FullResource Update[yyyy-mmdd].rar" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
+    The client should no longer download any other file, letting you skip Step 5. (unless more updates happen after the patch's date)
+
+
+When the MinimalUpdate and FullResourceUpdate manual patches are older than the Manual Patches, extract each Manual Patches incrementally after extracting each of the two.
+1c) After MinimalUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
+4c) After FullResourceUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
 
 
 ===================== C. Repair Archive
