@@ -6,6 +6,8 @@ Table of Contents
 
 A. Pre-requisites
 B. Instructions
+   a. Straightforward
+   b. Cautious
 C. Repair Archive
 D. FAQ/Others
 E. Contact
@@ -45,32 +47,75 @@ Manual Update Patches: (update files that are downloaded after Minimal or FullRe
  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
  - MinimalUpdate[yyyy-mmdd]
  - FullResourceUpdate[yyyy-mmdd]
- - ManualPatch[yyyy-mmdd]  (Incremental patch; deploy incrementally when MinimalUpdate and FullResourceUpdate are older than ManualPatch's date)
+ - ManualPatch[yyyy-mmdd]  (deploy when its date is newer than MinimalUpdate or FullResourceUpdate; extract from oldest to newest)
 
 
 ===================== B. Instructions
+
+These are attempts to give instructions on different levels.
+An "In other words" kind of concept.
+
+Working folder for all instances:
+Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
+
+
+=========== a. Straightforward
+
+MINIMAL
+1) Extract Minimal(AndroidAllData) to working folder;
+   Copy AndroidResConfigData.txt to working folder.
+2) Launch GFL with FullResource download unchecked.
+
+   (optional but eventual, towards a full resource installation)
+3) Copy FullResource(AndroidAddData) to working folder.
+4) Launch GFL with FullResource download checked.
+5) Re-launch GFL for remaining FullResource updates.
+
+
+FULL RESOURCE
+1) Extract Minimal to working folder.
+   Copy FullResource and AndroidResConfigData.txt to working folder.
+2) Launch GFL with FullResource download checked.
+3) Re-launch GFL for remaining FullResource updates.
+
+
+FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
+1) Extract Minimal to working folder;
+   Extract MinimalUpdate (then ManualPatch if applicable), overwrite.
+   Copy FullResource and AndroidResConfigData.txt to working folder.
+2) Launch GFL with FullResource download checked.
+3) Extract FullResourceUpdate (then ManualPatch if applicable), overwrite.
+   Re-launch GFL for any remaining FullResource updates.
+
+
+=========== b. Cautious
 
 Our Working folder: Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
 1) Extract the Minimal AndroidAllData[...].dat file to working folder.
    Copy `AndroidResConfigData.txt` to it as well.  (Important! else the client will not check for the extracted files at all)
-2) Run GFL, with FullResource download **un**checked.
+2) Launch GFL, with FullResource download **un**checked.
    It should see the extracted files and reduce the required download size from 986MB down to around 315MB.
 3) **Copy** Additional AndroidAddData[...].dat to working folder.
-4) Run GFL, this time with FullResource download checked. The client will unpack the copied .dat file by itself. Close the client after it finishes, or continue playing.
-   Note: You must have the correct AndroidAddData ("He_" or non "He_"), otherwise the client will not see the wrong 1.4GB dat file.
-5) Run GFL for the last time, for the remaining update files. (currently around 155MB)
+4) Launch GFL, this time with FullResource download checked. The client will unpack the copied .dat file by itself. Close the client after it finishes, or continue playing.
+   Note: You must have the correct AndroidAddData ("He_" or non-"He_"), otherwise the client will not see the wrong 1.4GB dat file.
+5) Launch GFL for the last time, for the remaining update files. (currently around 155MB)
 
 
 If you have the optional Manual Update Patches downloaded:
-1b) Extract "Minimal Update[yyyy-mmdd].rar" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
-4b) Extract "FullResource Update[yyyy-mmdd].rar" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
-    The client should no longer download any other file, letting you skip Step 5. (unless more updates happen after the patch's date)
+1b) Extract "MinimalUpdate[yyyy-mmdd].rar" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
+    This should reduce the required download on Step2, or skip the download entirely.
+4b) Extract "FullResourceUpdate[yyyy-mmdd].rar" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
+    The client should no longer download any other file, letting you skip Step5. (unless more updates happen after the patch's date)
 
 
 When the MinimalUpdate and FullResourceUpdate manual patches are older than the Manual Patches, extract each Manual Patches incrementally after extracting each of the two.
 1c) After MinimalUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
 4c) After FullResourceUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
+Note: as of 2020-1117, you don't have to do this since the patches are current. Next week on 2020-1124 you might have to, if I'm unable to provide an updated MinimalUpdate2020-1124 & FullResourceUpdate2020-1124, and so on.
+
+
+=========== c. For Dummies
 
 
 ===================== C. Repair Archive
@@ -146,7 +191,7 @@ Twitter @lloyd_dunamis
 
 ===================== F. Disclaimer
 
-The latest version of this document will be in [https://github.com/lloyddunamis/gfl_manualpatch/edit/main/FullResource_readme].
+The latest version of this document will always be in [https://github.com/lloyddunamis/gfl_manualpatch/edit/main/FullResource_readme].
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
