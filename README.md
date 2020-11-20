@@ -17,7 +17,7 @@ Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
 
 Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 
-Manual Patch  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+ManualPatch[yyyy-mmdd]  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
 
 
 ===================== B. Instructions
@@ -99,6 +99,14 @@ Twitter @lloyd_dunamis
 
 
 ===================== F. Disclaimer
+
+The latest version of this document will always be in [https://github.com/lloyddunamis/gfl_manualpatch].
+
+Special Thanks:
+  Arloste
+  GFL EN Discord Helpers
+  Ceia
+
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
