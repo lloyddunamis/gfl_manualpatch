@@ -1,7 +1,8 @@
 Girls' Frontline [EN]
-Manual Patch
+Community-provided Manual Patch
 
-===================== Table of Contents
+
+Table of Contents
 
 A. Pre-requisites
 B. Instructions
@@ -14,16 +15,14 @@ F. Disclaimer
 ===================== A. Pre-requisites
 
 Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
-
 Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
-
 ManualPatch[yyyy-mmdd]  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
 
 
 ===================== B. Instructions
 
 1) Open archive in WinRAR.
-2) Extract & Replace files to the following common path: (may vary slightly before \data\)
+2) Extract & Replace files to the following path: (may vary slightly before \data\)
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
@@ -58,10 +57,10 @@ ANDROID
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
-2Q) Am I in the right "New" folder?
+2Q) Am I in the right "New" or working folder?
 2A) The directory tree of the target working folder should look something like the following:
 
-Internal storage (/storage/emulated/0)
+Internal storage (/storage/emulated/0)(sorted alphabetically)
 - Android
   - data
     + com.app
@@ -85,16 +84,16 @@ Internal storage (/storage/emulated/0)
 3Q) I play GFL in an iOS device. Is there a workaround for when I encounter the "Insufficient Memory" error or when the app size bloat up more than 4GB?
 3A) Unfortunatley there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game after several attempts of patching.
 
+4Q) What do these Manual Patches contain, exactly?
+4A) These Manual Patches contain files that were created/updated since the last update.
 
-{to add more later}
+{will add more when needed}
 
 
 ===================== E. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
-
 Discord Amanie#7511
-
 Twitter @lloyd_dunamis
 
 
