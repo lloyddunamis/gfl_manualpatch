@@ -16,19 +16,15 @@ F. Disclaimer, Etc.
 
 ===================== A. Pre-requisites
 
-For deployment of personal manual patch
-Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
-Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
-
-
 Manual Download of Patch Files
 
-Required for all instances, the latest AndroidResConfigData.txt; retrieve from: https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw
+Required for all instances, the latest AndroidResConfigData.txt; retrieve from [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+(The link that the client actually retrieves to download the latest AndroidResConfigData.txt cannot be used because it changes on every update.
+For reference though, the 2020-1103 update looks like this: https://s3.us-east-2.amazonaws.com/gf1-file-server/umqmSSiCXQv12RHL5uHIusYiJ4wrsjrVzyeXk0VqMRLR3TIF7w.txt?r=1604419310 )
 
 Notes:
 If you'd like to just login to the game ASAP, download only "AndroidAllData".
-Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources.
-You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
+Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources. You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
 
 Default  (for fresh installs, or clear cache without Voodoo recipe flag)
 Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
@@ -42,18 +38,22 @@ Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFF
 FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
            or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
 
-(Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory")
+
+(Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory" or 99% progress halt)
 Manual Update Patches: (update files that are downloaded after Minimal or FullResource is installed)
  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
  - MinimalUpdate[yyyy-mmdd]
  - FullResourceUpdate[yyyy-mmdd]
  - ManualPatch[yyyy-mmdd]  (deploy when its date is newer than MinimalUpdate or FullResourceUpdate; extract from oldest to newest)
 
+This ManualPatch requires the software WinRAR.
+Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
+Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
+
 
 ===================== B. Instructions
 
-These are attempts to give instructions on different levels.
-An "In other words" kind of concept.
+These are attempts to give instructions on different levels. An "In other words" kind of concept.
 
 Working folder for all instances:
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
@@ -112,7 +112,7 @@ If you have the optional Manual Update Patches downloaded:
 When the MinimalUpdate and FullResourceUpdate manual patches are older than the Manual Patches, extract each Manual Patches incrementally after extracting each of the two.
 1c) After MinimalUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
 4c) After FullResourceUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
-Note: as of 2020-1117, you don't have to do this since the patches are current. Next week on 2020-1124 you might have to, if I'm unable to provide an updated MinimalUpdate2020-1124 & FullResourceUpdate2020-1124, and so on.
+Note: as of 2020-1117, you don't have to do this since the patches are current. Next week on 2020-1124 you will have to, if I'm unable to provide an updated MinimalUpdate2020-1124 & FullResourceUpdate2020-1124, and so on. Extract just ManualPatch2020-1124; wouldn't have to extract 2020-1117.
 
 
 =========== c. For Dummies
@@ -152,10 +152,10 @@ Notes:
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
-2Q) Am I in the right "New" folder?
+2Q) Am I in the right "New" or working folder?
 2A) The directory tree of the target working folder should look something like the following:
 
-Internal storage (/storage/emulated/0)
+Internal storage (/storage/emulated/0)(sorted alphabetically)
 - Android
   - data
     + com.app
@@ -179,13 +179,16 @@ Internal storage (/storage/emulated/0)
 3Q) I play GFL in an iOS device. Is there a workaround for when I encounter the "Insufficient Memory" error or when the app size bloat up more than 4GB?
 3A) Unfortunatley there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game after several attempts of patching.
 
+4Q) What do these Manual Patches contain, exactly?
+4A) These Manual Patches contain files that were created/updated since the last update.
+
+{will add more when needed}
+
 
 ===================== E. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
-
 Discord Amanie#7511
-
 Twitter @lloyd_dunamis
 
 
