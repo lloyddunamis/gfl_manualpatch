@@ -28,15 +28,15 @@ Features like Intelligence Center, Forward Basecamp etc., will not be accessible
 
 Default  (for fresh installs, or clear cache without Voodoo recipe flag)
 Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
 
 Uncensored  (for clear cache with Voodoo recipe flag)
-Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
-           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
 
 
 (Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory" or 99% progress halt)
