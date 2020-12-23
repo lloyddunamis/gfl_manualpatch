@@ -8,19 +8,14 @@ A. Pre-requisites
 B. Instructions
    a. Straightforward
    b. Cautious
-C. Repair Archive
-D. FAQ/Others
-E. Contact
-F. Disclaimer, Etc.
+C. FAQ/Others
+D. Contact
+E. Disclaimer, Etc.
 
 
 ===================== A. Pre-requisites
 
 Manual Download of Patch Files
-
-Required for all instances, the latest AndroidResConfigData.txt; retrieve from [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
-(The link that the client actually retrieves to download the latest AndroidResConfigData.txt cannot be used because it changes on every update.
-For reference though, the 2020-1103 update looks like this: https://s3.us-east-2.amazonaws.com/gf1-file-server/umqmSSiCXQv12RHL5uHIusYiJ4wrsjrVzyeXk0VqMRLR3TIF7w.txt?r=1604419310 )
 
 Notes:
 If you'd like to just login to the game ASAP, download only "AndroidAllData".
@@ -46,10 +41,6 @@ Manual Update Patches: (update files that are downloaded after Minimal or FullRe
  - FullResourceUpdate[yyyy-mmdd]
  - ManualPatch[yyyy-mmdd]  (deploy when its date is newer than MinimalUpdate or FullResourceUpdate; extract from oldest to newest)
 
-This ManualPatch requires the software WinRAR.
-Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
-Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
-
 
 ===================== B. Instructions
 
@@ -62,35 +53,33 @@ Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 =========== a. Straightforward
 
 MINIMAL
-1) Extract Minimal(AndroidAllData) to working folder;
-   Copy AndroidResConfigData.txt to working folder.
-2) Launch GFL with FullResource download unchecked.
+1) Copy Minimal(AndroidAllData) .dat file to working folder;
+2) Launch GFL with FullResource download UNchecked.
+3) Tap on login screen or relaunch for remaining download of Minimal updates, still with FullResource download UNchecked.
+   You may now do GFL dailies, that doesn't require the FullResource.
 
    (optional but eventual, towards a full resource installation)
-3) Copy FullResource(AndroidAddData) to working folder.
-4) Launch GFL with FullResource download checked.
-5) Re-launch GFL for remaining FullResource updates.
+4) Copy FullResource(AndroidAddData) .dat file to working folder.
+5) Relaunch GFL with FullResource download checked;
+   OR while in-game, go to Settings and Download Data from there.
+6) Relaunch GFL for remaining download of FullResource updates.
 
 
 FULL RESOURCE
-1) Extract Minimal to working folder.
-   Copy FullResource and AndroidResConfigData.txt to working folder.
+1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
 2) Launch GFL with FullResource download checked.
-3) Re-launch GFL for remaining FullResource updates.
-
+3) Tap on login screen or relaunch for remaining download of Minimal & FullResource updates.
+   
 
 FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
-1) Extract Minimal to working folder;
-   Extract MinimalUpdate (then ManualPatch if applicable), overwrite.
-   Copy FullResource and AndroidResConfigData.txt to working folder.
+1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
 2) Launch GFL with FullResource download checked.
-3) Extract FullResourceUpdate (then ManualPatch if applicable), overwrite.
-   Re-launch GFL for any remaining FullResource updates.
+3) Once in login screen or if closed,
+   Extract contents of MinimalUpdate & FullResourceUpdate (then ManualPatch if applicable; overwrite) to working folder.
+4) Tap on login screen or relaunch GFL to apply updates.
 
 
-=========== b. Cautious
-
-Our Working folder: Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
+=========== b. Cautious  (to be updated; still old steps)
 
 1) Extract the Minimal AndroidAllData[...].dat file to working folder.
    Copy `AndroidResConfigData.txt` to it as well.  (Important! else the client will not check for the extracted files at all)
@@ -118,34 +107,7 @@ Note: as of 2020-1117, you don't have to do this since the patches are current. 
 =========== c. For Dummies
 
 
-===================== C. Repair Archive
-
-In case part of the archive is damaged, you may attempt to repair the file.
-A damaged archive will usually fail to extract some files properly.
-This archive file has a Recovery Volume for such cases.
-
-WINDOWS
-1) Open file in WinRAR (or select the file inside RAR).
-2) Go to "Tools" > "Repair archive".
-3) Change the output path if need be, and choose the "Treat the corrupt archive as RAR" radio button.
-4) Press OK button to start repairing.
-5) When finished, a new file will be created with the prefix "fixed."; this will be the repaired version of the archive file.
-   Results log will also show how much damage was repaired, if any.
-
-ANDROID
-1) Open file in RAR (or select the file inside RAR).
-2) Tap the vertically-aligned three dots on the top-right corner.
-3) Tap "Repair archive".
-4) Confirm prompt by tapping "OK".
-5) When finished, a new file will be created with the prefix "fixed."; this will be the repaired version of the archive file.
-   Results log will also show how much damage was repaired, if any.
-
-
-Notes:
-* Sometimes this works for the .dat files that are ZIP files anyway; This "rebuilds" the archive instead, somehow similar to repair.
-
-
-===================== D. FAQ/Others
+===================== C. FAQ/Others
 
 1Q) The size of GFL is increasing! (Exceeding 4GB or so)
 1A) Delete the temporary downloaded files (*.dat & *.temp) left in the following game file location:
@@ -185,14 +147,14 @@ Internal storage (/storage/emulated/0)(sorted alphabetically)
 {will add more when needed}
 
 
-===================== E. Contact
+===================== D. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
 Discord Amanie#7511
 Twitter @lloyd_dunamis
 
 
-===================== F. Disclaimer, Etc
+===================== E. Disclaimer, Etc
 
 The latest version of this document will always be in [https://github.com/lloyddunamis/gfl_manualpatch/blob/main/FullResource_readme].
 
