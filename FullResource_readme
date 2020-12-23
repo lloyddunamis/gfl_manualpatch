@@ -27,7 +27,7 @@ If you'd like to just login to the game ASAP, download only "AndroidAllData".
 Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources. You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
 
 Default  (for fresh installs, or clear cache without Voodoo recipe flag)
-Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20200914C092BFFBE49E2829F95327DF1B1F2B33.dat
+Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
 FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
            or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
