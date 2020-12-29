@@ -6,51 +6,24 @@ Table of Contents
 
 A. Pre-requisites
 B. Instructions
-C. Repair Archive
-D. FAQ/Others
-E. Contact
-F. Disclaimer
+C. FAQ/Others
+D. Contact
+E. Disclaimer
 
 
 ===================== A. Pre-requisites
 
-Windows: WinRAR v5.0 or later  [https://www.rarlab.com/]
-Android: RAR  [https://play.google.com/store/apps/details?id=com.rarlab.rar]
 ManualPatch[yyyy-mmdd]  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
 
 
 ===================== B. Instructions
 
-1) Open archive in WinRAR.
-2) Extract & Replace files to the following path: (may vary slightly before \data\)
+Just extract files to the following path: (may vary slightly before /data/)
 
-Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
-
-
-===================== C. Repair Archive
-
-In case part of the archive is damaged, you may attempt to repair the file.
-A damaged archive will usually fail to extract some files properly.
-This archive file has a Recovery Volume for such cases.
-
-WINDOWS
-1) Open file in WinRAR (or select the file inside RAR).
-2) Go to "Tools" > "Repair archive".
-3) Change the output path if need be, and choose the "Treat the corrupt archive as RAR" radio button.
-4) Press OK button to start repairing.
-5) When finished, a new file will be created with the prefix "fixed."; this will be the repaired version of the archive file.
-   Results log will also show how much damage was repaired, if any.
-
-ANDROID
-1) Open file in RAR (or select the file inside RAR).
-2) Tap the vertically-aligned three dots on the top-right corner.
-3) Tap "Repair archive".
-4) Confirm prompt by tapping "OK".
-5) When finished, a new file will be created with the prefix "fixed."; this will be the repaired version of the archive file.
-   Results log will also show how much damage was repaired, if any.
+Android/data/com.sunborn.girlsfrontline.en/files/Android/New/
 
 
-===================== D. FAQ/Others
+===================== C. FAQ/Others
 
 1Q) The size of GFL is increasing! (Exceeding 4GB or so)
 1A) Delete the temporary downloaded files (*.dat & *.temp) left in the following game file location:
@@ -90,14 +63,14 @@ Internal storage (/storage/emulated/0)(sorted alphabetically)
 {will add more when needed}
 
 
-===================== E. Contact
+===================== D. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
 Discord Amanie#7511
 Twitter @lloyd_dunamis
 
 
-===================== F. Disclaimer
+===================== E. Disclaimer
 
 The latest version of this document will always be in [https://github.com/lloyddunamis/gfl_manualpatch].
 
