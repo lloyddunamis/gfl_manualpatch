@@ -24,22 +24,22 @@ Features like Intelligence Center, Forward Basecamp etc., will not be accessible
 Default  (for fresh installs, or clear cache without Voodoo recipe flag)
 Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+FullRes: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
 
 Uncensored  (for clear cache with Voodoo recipe flag)
 Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
       or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-FullResource: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-           or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+FullRes: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
 
 
 (Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory" or 99% progress halt)
 Manual Update Patches: (update files that are downloaded after Minimal or FullResource is installed)
  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
- - MinimalUpdate[yyyy-mmdd]
- - FullResourceUpdate[yyyy-mmdd]
- - ManualPatch[yyyy-mmdd]  (deploy when its date is newer than MinimalUpdate or FullResourceUpdate; extract from oldest to newest)
+ - AndroidAllData_Update[yyyy-mmdd]
+ - AndroidAddData_Update[yyyy-mmdd]
+ - ManualPatch[yyyy-mmdd]  (deploy when it is dated after the _Update packages; extract all at once)
 
 
 ===================== B. Instructions
@@ -53,13 +53,13 @@ Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 =========== a. Straightforward
 
 MINIMAL
-1) Copy Minimal(AndroidAllData) .dat file to working folder;
-2) Launch GFL with FullResource download UNchecked.
-3) Tap on login screen or relaunch for remaining download of Minimal updates, still with FullResource download UNchecked.
-   You may now do GFL dailies, that doesn't require the FullResource.
+1) Copy Minimal AndroidAllData[...].dat file to working folder;
+2) Launch GFL with FullResource download UN-checked.
+3) Tap on login screen or relaunch; it will return to the update screen to download remaining Minimal updates, still with FullResource download UN-checked.
+   You could now do most GFL dailies.
 
    (optional but eventual, towards a full resource installation)
-4) Copy FullResource(AndroidAddData) .dat file to working folder.
+4) Copy FullResource AndroidAddData[...].dat file to working folder.
 5) Relaunch GFL with FullResource download checked;
    OR while in-game, go to Settings and Download Data from there.
 6) Relaunch GFL for remaining download of FullResource updates.
@@ -74,27 +74,32 @@ FULL RESOURCE
 FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
 1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
 2) Launch GFL with FullResource download checked.
-3) Once in login screen or if closed,
-   Extract contents of MinimalUpdate & FullResourceUpdate (then ManualPatch if applicable; overwrite) to working folder.
+3) Once in login screen or if game closed,
+   Extract contents of both the manual AndroidAllData_Update and AndroidAddData_Update packages (then ManualPatch if applicable; overwrite) to working folder.
 4) Tap on login screen or relaunch GFL to apply updates.
 
 
-=========== b. Cautious  (to be updated; still old steps)
+=========== b. Cautious  (under construction)
 
-1) Extract the Minimal AndroidAllData[...].dat file to working folder.
-   Copy `AndroidResConfigData.txt` to it as well.  (Important! else the client will not check for the extracted files at all)
-2) Launch GFL, with FullResource download **un**checked.
-   It should see the extracted files and reduce the required download size from 986MB down to around 315MB.
-3) **Copy** Additional AndroidAddData[...].dat to working folder.
+MINIMAL INSTALLATION
+1) Copy (not extract) the Minimal AndroidAllData[...].dat file to working folder.
+2) Launch GFL, with FullResource download UN-checked. It should see the extracted files and reduce the required download size from 986MB to 0MB.
+     Note: You must have the correct AndroidAllData ("He_" or non-"He_"), otherwise the client will not see this 986MB dat file.
+
+3) After the game successful extraction, the game will show an outdated title screen picture.
+   Tap the screen; you will be brought back to the update screen to let it update the outdated files from AndroidAllData (~600MB).
+3b) Optionally instead of letting it download, extract "AndroidAllData_Update[yyyy-mmdd].zip" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
+    This should significantly reduce the required download on Step2, or skip download entirely if everything is set.
+
+4) Copy Additional AndroidAddData[...].dat to working folder.
 4) Launch GFL, this time with FullResource download checked. The client will unpack the copied .dat file by itself. Close the client after it finishes, or continue playing.
    Note: You must have the correct AndroidAddData ("He_" or non-"He_"), otherwise the client will not see the wrong 1.4GB dat file.
 5) Launch GFL for the last time, for the remaining update files. (currently around 155MB)
 
 
-If you have the optional Manual Update Patches downloaded:
-1b) Extract "MinimalUpdate[yyyy-mmdd].rar" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
-    This should reduce the required download on Step2, or skip the download entirely.
-4b) Extract "FullResourceUpdate[yyyy-mmdd].rar" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
+FULL RESOURCE INSTALLATION
+
+4b) Extract "AndroidAddData_Update[yyyy-mmdd].zip" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
     The client should no longer download any other file, letting you skip Step5. (unless more updates happen after the patch's date)
 
 
@@ -102,6 +107,33 @@ When the MinimalUpdate and FullResourceUpdate manual patches are older than the 
 1c) After MinimalUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
 4c) After FullResourceUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
 Note: as of 2020-1117, you don't have to do this since the patches are current. Next week on 2020-1124 you will have to, if I'm unable to provide an updated MinimalUpdate2020-1124 & FullResourceUpdate2020-1124, and so on. Extract just ManualPatch2020-1124; wouldn't have to extract 2020-1117.
+
+
+
+MINIMAL + FULL RESOURCE INSTALLATION
+
+1) Extract the Minimal AndroidAllData[...].dat file to working folder.
+2) Launch GFL, with FullResource download UN-checked.
+   It should see the extracted files and reduce the required download size from 986MB to 0MB.
+3) Copy Additional AndroidAddData[...].dat to working folder.
+4) Launch GFL, this time with FullResource download checked. The client will unpack the copied .dat file by itself. Close the client after it finishes, or continue playing.
+   Note: You must have the correct AndroidAddData ("He_" or non-"He_"), otherwise the client will not see the wrong 1.4GB dat file.
+5) Launch GFL for the last time, for the remaining update files. (currently around 155MB)
+
+
+If you have the optional Manual Update Patches downloaded, slip these in-between the steps:
+1b) Extract "AndroidAllData_Update[yyyy-mmdd].zip" after extracting Minimal AndroidAllData[...].dat; overwrite any existing file.
+    This should reduce the required download on Step2, or skip the download entirely.
+4b) Extract "AndroidAddData_Update[yyyy-mmdd].zip" after the client successfully installs the contents of AndroidAddData[...].dat; overwrite any existing file.
+    The client should no longer download any other file, letting you skip Step5. (unless more updates happen after the patch's date)
+
+
+When the MinimalUpdate and FullResourceUpdate manual patches are older than the Manual Patches, extract each Manual Patches incrementally after extracting each of the two.
+1c) After MinimalUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
+4c) After FullResourceUpdate2020-1103 extraction, extract ManualPatch2020-1110 and ManualPatch2020-1117.
+Note: as of 2020-1117, you don't have to do this since the patches are current. Next week on 2020-1124 you will have to, if I'm unable to provide an updated MinimalUpdate2020-1124 & FullResourceUpdate2020-1124, and so on. Extract just ManualPatch2020-1124; wouldn't have to extract 2020-1117.
+
+
 
 
 =========== c. For Dummies
