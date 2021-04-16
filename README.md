@@ -18,7 +18,7 @@ ManualPatch[yyyy-mmdd]  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
 
 ===================== B. Instructions
 
-Just extract files to the following path: (may vary slightly before /data/)
+Just extract&overwrite files to the following path: (may vary slightly before /data/)
 
 Android/data/com.sunborn.girlsfrontline.en/files/Android/New/
 
@@ -77,7 +77,6 @@ The latest version of this document will always be in [https://github.com/lloydd
 Special Thanks:
   Arloste
   GFL EN Discord Helpers
-  Ceia
 
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
