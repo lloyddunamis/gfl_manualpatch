@@ -22,23 +22,21 @@ If you'd like to just login to the game ASAP, download only "AndroidAllData".
 Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources. You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
 
 Default  (for fresh installs, or clear cache without Voodoo recipe flag)
-Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-FullRes: https://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
+FullRes: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
 
-Uncensored  (for clear cache with Voodoo recipe flag)
-Minimal: https://gfus-cdn.sunborngame.com/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-FullRes: https://gfus-cdn.sunborngame.com/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_20201123FBB8CBE3258642F9C2387E3395427FCD.dat
+Uncensored  (for Clear Cache with Voodoo recipe flag)
+Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_2021032577D995C7D3BE5E73F654C46D65620141.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_2021032577D995C7D3BE5E73F654C46D65620141.dat
+FullRes: http://gfus-cdn.sunborngame.com/android/AndroidAddData_2021032577D995C7D3BE5E73F654C46D65620141.dat
+      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_2021032577D995C7D3BE5E73F654C46D65620141.dat
 
 
-(Optional but quickens client patching further/lowers the chance to stumble upon the dreaded "Insufficient Memory" or 99% progress halt)
 Manual Update Patches: (update files that are downloaded after Minimal or FullResource is installed)
  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
- - AndroidAllData_Update[yyyy-mmdd]
- - AndroidAddData_Update[yyyy-mmdd]
+ - AndroidData_Update[yyyy-mmdd]  (applies to Minimal-only and FullResource)
  - ManualPatch[yyyy-mmdd]  (deploy when it is dated after the _Update packages; extract all at once)
 
 
@@ -52,31 +50,11 @@ Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
 =========== a. Straightforward
 
-MINIMAL
-1) Copy Minimal AndroidAllData[...].dat file to working folder;
-2) Launch GFL with FullResource download UN-checked.
-3) Tap on login screen or relaunch; it will return to the update screen to download remaining Minimal updates, still with FullResource download UN-checked.
-   You could now do most GFL dailies.
-
-   (optional but eventual, towards a full resource installation)
-4) Copy FullResource AndroidAddData[...].dat file to working folder.
-5) Relaunch GFL with FullResource download checked;
-   OR while in-game, go to Settings and Download Data from there.
-6) Relaunch GFL for remaining download of FullResource updates.
-
-
-FULL RESOURCE
-1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
-2) Launch GFL with FullResource download checked.
-3) Tap on login screen or relaunch for remaining download of Minimal & FullResource updates.
-   
-
-FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
-1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
-2) Launch GFL with FullResource download checked.
-3) Once in login screen or if game closed,
-   Extract contents of both the manual AndroidAllData_Update and AndroidAddData_Update packages (then ManualPatch if applicable; overwrite) to working folder.
-4) Tap on login screen or relaunch GFL to apply updates.
+1) Copy Minimal(AndroidAllData) & FullRes(AndroidAddData) .dat files to working folder.
+2) Launch GFL, check FullResource download when asked.
+3) Wait for it to extract the contents. Once done and in login screen, exit the game.
+4) Extract contents of AndroidData_Update packages (then ManualPatch if applicable, from oldest to newest; overwrite) to working folder.
+5) Relaunch GFL to apply updates.
 
 
 =========== b. Cautious  (under construction)
@@ -193,7 +171,6 @@ The latest version of this document will always be in [https://github.com/lloydd
 Special Thanks:
   Arloste
   GFL EN Discord Helpers
-  Ceia
 
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
