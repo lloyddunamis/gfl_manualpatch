@@ -13,7 +13,7 @@ E. Disclaimer
 
 ===================== A. Pre-requisites
 
-ManualPatch[yyyy-mmdd]  [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
+ManualPatch[yyyy-mmdd]  [https://bit.ly/GFLManualPatchFolder]
 
 
 ===================== B. Instructions
