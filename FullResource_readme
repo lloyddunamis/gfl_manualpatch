@@ -15,27 +15,15 @@ E. Disclaimer, Etc.
 
 Manual Download of Patch Files
 
-Notes:
-If you'd like to just login to the game ASAP, download only "AndroidAllData".
-Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download the additional resources. You can do this while in-game though, or proceed to also download the additional resource "AndroidAddData" during the patching screen.
+If you'd like to just login to the game ASAP, download only "Minimal". Features like Intelligence Center, Forward Basecamp etc., will not be accessible until you download "Additional" resources. You can do this while in-game though, or proceed to also download the "Additional" resource files during the patching screen.
 
-Default  (for fresh installs, or clear cache without Voodoo recipe flag)
-Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
-FullRes: http://gfus-cdn.sunborngame.com/android/AndroidAddDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddDataHe_2021032577D995C7D3BE5E73F654C46D65620141.dat
-
-Uncensored  (for clear cache with Voodoo recipe flag)
-Minimal: http://gfus-cdn.sunborngame.com/android/AndroidAllData_2021032577D995C7D3BE5E73F654C46D65620141.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAllData_2021032577D995C7D3BE5E73F654C46D65620141.dat
-FullRes: http://gfus-cdn.sunborngame.com/android/AndroidAddData_2021032577D995C7D3BE5E73F654C46D65620141.dat
-      or https://s3.us-east-2.amazonaws.com/gf1-file-server/android/AndroidAddData_2021032577D995C7D3BE5E73F654C46D65620141.dat
-
-
-Manual Update Patches: (update files that are downloaded after Minimal or FullResource is installed)
- [https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw]
- - AndroidData_Update[yyyy-mmdd]  (applies to either Minimal-only or FullResource)
- - ManualPatch[yyyy-mmdd]  (deploy when it is dated after the _Update packages; extract all at once)
+https://mega.nz/folder/nQFCTRzR#QiQcTkJq_BGY9IZMjrB1Vw
+ - ManualPatch_Minimal[yyyy-mmdd]  (the minimal files required to run GFL; FullResource checkbox UNchecked)
+ - ManualPatch_Additional[yyyy-mmdd]  (additional files to run full GFL experience; FullResource checkbox checked)
+ - ManualPatch[yyyy-mmdd]  (deploy when Minimal & Additional are dated after the _Update packages; extract all at once)
+ 
+ 
+Note for past ManualPatch users: If you're wondering where the gigabyte-large "AndroidAllData" and "AndroidAddData" are now, it seems the client has moved away from using a packaged form. All files are now downloaded directly & individually.
 
 
 ===================== B. Instructions
@@ -45,32 +33,25 @@ Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
 
 MINIMAL
-1) Copy Minimal(AndroidAllData) .dat file to working folder;
+1) Extract contents of Minimal.zip to working folder.
 2) Launch GFL with FullResource download UNchecked.
-3) Tap on login screen or relaunch for remaining download of Minimal updates, still with FullResource download UNchecked.
-   You may now do GFL dailies that don't require the FullResource.
+3) Tap to proceed with the patching screen. 
+   Progress bar should shoot straight to near completion.
+   You may now do GFL activities that don't require the FullResource.
 
-   (optional but eventual, should you be ready to install FullResource)
-4) Copy FullResource(AndroidAddData) .dat file to working folder.
+   (optional but eventual, once you're ready to install the FullResource)
+4) Extract contents of Additional.zip to working folder.
 5) Relaunch GFL with FullResource download checked;
    OR while in-game, go to Settings and Download Data from there.
-   Eitherway, progress should start at 90% indicating extraction process.
-6) Tap on the title screen or relaunch for remaining download of FullResource updates.
+   Progress bar should shoot straight to near completion.
 
 
-FULL RESOURCE
-1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
-2) Launch GFL with FullResource download checked.
-3) Tap on the title screen or relaunch for remaining download of Minimal & FullResource updates.
-   
-
-FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
-1) Copy Minimal(AndroidAllData) & FullResource(AndroidAddData) .dat files to working folder.
+FULL RESOURCE  (Minimal + Additional)
+Note: Same as Minimal, just adding Additional.zip
+1) Extract contents of Minimal.zip and Additional.zip to the working folder.
 2) Launch GFL, check FullResource download when asked.
-3) Progress bar should shoot to 90%; wait for it to finish extracting the contents.
-   Once done and in the title screen, exit the game or go to Home menu.
-4) Extract contents of AndroidData_Update package (then all ManualPatch newer than its date if applicable, incremental from oldest to newest; overwrite) to working folder.
-5) Tap on the title screen or relaunch GFL to apply updates.
+3) Tap to proceed with the patching screen.
+   Progress bar should shoot straight to near completion.
 
 
 
@@ -81,7 +62,7 @@ FULL RESOURCE + MANUAL UPDATES (+ MANUAL PATCH)
 
 Android\data\com.sunborn.girlsfrontline.en\files\Android\New\
 
-    iOS users will have to reinstall the game, or make the device proceed with its cleanup procedure.
+    iOS users will have to reinstall the game, or make the device proceed with its cleanup procedure (triggers by itself when storage is near full.
 
 2Q) Am I in the right "New" or working folder?
 2A) The directory tree of the target working folder should look something like the following:
@@ -108,10 +89,11 @@ Internal storage (/storage/emulated/0)(sorted alphabetically)
   + obb
 
 3Q) I play GFL in an iOS device. Is there a workaround for when I encounter the "Insufficient Memory" error or when the app size bloat up more than 4GB?
-3A) Unfortunatley there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game after several attempts of patching.
+3A) Unfortunately there is no known workaround for iOS devices. You will have to repeatedly Clear Cache in-game on every patching error encountered.
 
 4Q) What do these Manual Patches contain, exactly?
-4A) These Manual Patches contain the .dat files that the client downloads itself, and that were created/updated since the last update.
+4A) These Manual Patches contain the very files that the client downloads.
+    The dated ManualPatches contain files that were created/updated/changed since the last update.
 
 {will add more when needed}
 
@@ -119,6 +101,7 @@ Internal storage (/storage/emulated/0)(sorted alphabetically)
 ===================== D. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
+(The following 3 are all me)
 Discord Amanie#7511
 Twitter @lloyd_dunamis
 Youtube https://www.youtube.com/c/Lloyd_Dunamis
@@ -131,14 +114,16 @@ The latest version of this document will always be in [https://github.com/lloydd
 Special Thanks:
   Arloste
   GFL EN Discord Helpers
-  Ceia
+
+
+Should you like to support what is done here, you may...divert that somewhere else more needed, like a charity you prefer.
+If you certainly insist though, then...ah geez, you have my utmost gratitude. https://ko-fi.com/lloyddunamis
 
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
 Due to differences in configurations and the like, your mileage may vary.
-No warranty provided; Use at your own risk.
-Though do let me know, as we might be able to fix or work around what makes it not work.
+No warranty provided; Use at your own risk. Though do let me know, as we might be able to fix or work around what makes it not work.
 Worst case possible, you'd still have to Clear Cache/Uninstall anyway.
 
 This is not an official product from, nor is officially endorsed by, Sunborn / MICA Team.
