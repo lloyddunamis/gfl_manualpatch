@@ -66,8 +66,10 @@ Internal storage (/storage/emulated/0)(sorted alphabetically)
 ===================== D. Contact
 
 Girls' Frontline EN Official Discord Server #gf-ask-help  [https://discord.gg/gfen]
+(The following 3 are all me)
 Discord Amanie#7511
 Twitter @lloyd_dunamis
+Youtube https://www.youtube.com/c/Lloyd_Dunamis
 
 
 ===================== E. Disclaimer
@@ -78,6 +80,9 @@ Special Thanks:
   Arloste
   GFL EN Discord Helpers
 
+
+Should you like to support what is done here, you may...divert that somewhere else more needed, like a charity you prefer.
+If you certainly insist though, then...ah geez, you have my utmost gratitude. https://ko-fi.com/lloyddunamis
 
 This Girls' Frontline [EN] Manual Patch was made for personal use, and it worked for me like a charm.
 It is then provided to the community as-is in case it helps anyone else.
